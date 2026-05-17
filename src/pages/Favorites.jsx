@@ -7,10 +7,10 @@ const Favorites = () => {
 
   return (
     <div>
-      <h1>Favorite Movies</h1>
+      <h1 className="favorite-title" >Favorite Movies</h1>
 
       {watchlist.length === 0 && (
-        <h2>No Favorite Movies Added Yet</h2>
+        <h2 className="favorite-subtitle" >No Favorite Movies Added Yet</h2>
       )}
 
       <div className="movie-grid">
