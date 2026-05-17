@@ -7,11 +7,16 @@ const Favorites = () => {
 
   return (
     <div>
-      <h1 className="favorite-title" >Favorite Movies</h1>
+      <div className="favorite-header">
+    <h1 className="favorite-title">Favorite Movies</h1>
 
-      {watchlist.length === 0 && (
-        <h2 className="favorite-subtitle" >No Favorite Movies Added Yet</h2>
-      )}
+    {watchlist.length === 0 && (
+        <h2 className="favorite-subtitle">
+            No Favorite Movies Added Yet
+        </h2>
+    )}
+</div>
+      
 
       <div className="movie-grid">
         {watchlist.map((movie) => (

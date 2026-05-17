@@ -424,26 +424,35 @@ body{
   color: #e50914;
   border: 1px solid #e50914;
   transform: scale(1.05);
-}.favorite-title{
-    font-size: 60px;
-    color: red;
-    text-shadow:
-        0 0 10px red,
-        0 0 20px red,
-        0 0 40px darkred;
-    font-family: Georgia, serif;
-    font-weight: bold;
-    letter-spacing: 3px;
-    margin-left: 20px;
+}
+.favorite-header{
+    position: relative;
+    width: 100%;
+}
+
+.favorite-title{
+    font-size: 50px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  color: black;
+  margin: 20px;
+  letter-spacing: 2px;
+  text-shadow: 0 0 12px red;
+  border-left: 6px solid darkred;
 }
 
 .favorite-subtitle{
-    font-size: 35px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    
+    font-size: 20px;
     color: white;
     text-shadow:
         0 0 10px red,
         0 0 20px darkred;
-    font-family: 'Trebuchet MS', sans-serif;
+
     font-weight: bold;
-    margin-left: 20px;
+    text-align: center;
 }
